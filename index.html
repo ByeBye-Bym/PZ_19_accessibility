@@ -2,14 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Доступная библиотека</title>
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header class="header">
       <div>Библиотека</div>
-      <nav><a href="#books">Книги</a><a href="#about">О проекте</a></nav>
+      <nav>
+        <a href="#books">Книги</a>
+        <a href="#about">О проекте</a>
+      </nav>
     </header>
     <main>
       <section class="hero">
@@ -21,19 +24,23 @@
             Проверьте страницу с точки зрения клавиатурной навигации и
             скринридера.
           </p>
-          <div class="hero__button" tabindex="0">Открыть каталог</div>
+          <a href="#books" class="hero__button">Открыть каталог</a>
         </div>
       </section>
+      
       <section id="books">
         <h2>Популярные книги</h2>
         <article class="book">
-          <img src="./images/book.svg" />
+          <img src="./images/book.svg" alt="Обложка книги Основы веб-разработки" />
           <h3>Основы веб-разработки</h3>
           <p>Введение в HTML и CSS.</p>
           <a href="#">Подробнее</a>
         </article>
       </section>
-      <section id="about"><h2>О проекте</h2></section>
+      
+      <section id="about">
+        <h2>О проекте</h2>
+      </section>
     </main>
   </body>
 </html>
